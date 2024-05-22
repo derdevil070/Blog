@@ -10,3 +10,11 @@ class Blog(BaseModel):
 class BlogUpdate(Blog):
     title: Optional[str] = None
     body: Optional[str] = None
+
+
+class ShowBlog(BaseModel):
+    title: Optional[str] = None
+    body: Optional[str] = None
+
+    class Config:
+        orm_mode = True
