@@ -1,7 +1,7 @@
 from fastapi import HTTPException, status
 from sqlalchemy.orm import Session
 from routers.hashing import Hash
-from routers.schemas import User, ShowUser
+from routers.schemas import User
 import routers.models as models
 
 
